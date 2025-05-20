@@ -1,1 +1,126 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Built to Last – DH Course Hub</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'EB Garamond', serif;
+      background: white;
+      color: black;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background: white;
+      padding: 2rem;
+      border-right: 1px solid #000;
+    }
+
+    .sidebar img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar h1 {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    .main {
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      border-bottom: 2px solid black;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        border-right: none;
+        border-bottom: 1px solid black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="poster.png" alt="Built to Last poster" />
+      <h1><a href="https://docs.google.com/document/d/1aA9A_wCBJWNdSNNysGPbETsQYln7KZ4vjRLC3lWrgXg/edit?usp=sharing" target="_blank">Digital Humanities and Data Sustainability</a></h1>
+      <p><a href="mailto:christian.casey@fu-berlin.de">Instructor: Christian Casey</a></p>
+      <!-- <p>
+        A hands-on practical approach to sustainability in the digital humanities.
+        We explore how to build digital projects that are not only innovative and engaging,
+        but also designed with long-term access, preservation, and ethical stewardship in mind.
+        Students develop and document their own projects using modern web technologies and
+        sustainable practices.
+      </p> -->
+      <!-- <p>
+        LV 14143<br>
+        Tuesdays 14:00<br>
+        <a href="https://maps.app.goo.gl/RdBSCys2S9uuudCW9" target="_blank">Holzlaube 2.2063</a><br>
+        <a href="https://docs.google.com/document/d/1aA9A_wCBJWNdSNNysGPbETsQYln7KZ4vjRLC3lWrgXg/edit?usp=sharing" target="_blank">Living Syllabus</a><br>
+        
+      </p> -->
+    </div>
+    <div class="main">
+      <h2>Student Projects</h2>
+      <ul id="projects">
+        Coming soon...
+        <!-- <li><a href="https://example.com/project1" target="_blank">Project Title One</a></li>
+        <li><a href="https://example.com/project2" target="_blank">Project Title Two</a></li> -->
+        <!-- Add more student projects here -->
+      </ul>
+
+      <h2>Homework Assignments</h2>
+      <ul id="homework">
+        <li><a href="https://14143-dh-sustainability.github.io/getting-started/" target="_blank">Homework 1: Gitting Started</a></li>
+        <li><a href="https://14143-dh-sustainability.github.io/our-open-access-journal/" target="_blank">Homework 2: Our Open-Access Journal</a></li>
+        <li><a href=https://14143-dh-sustainability.github.io/personal-cv-hub/" target="_blank">Homework 3: Personal CVs</a></li>
+        <!-- Add more homework links here -->
+      </ul>
+    </div>
+  </div>
+  <script>
+    // Placeholder if you want dynamic content in the future
+    console.log('Course hub loaded.');
+  </script>
+</body>
+</html>
