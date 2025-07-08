@@ -104,6 +104,10 @@
       </p> -->
     </div>
     <div class="main">
+
+
+      <h2>Final Projects</h2>
+      <ul id="projects">Loading projects...</ul>
       
       <h2>Homework Assignments</h2>
       <ul id="homework">
@@ -114,10 +118,6 @@
         <li><a href="https://14143-dh-sustainability.github.io/cms/" target="_blank">Homework 5: Content Management Systems</a></li>
         <li><a href="https://docs.google.com/presentation/d/1oEVt_8ycHLoMfVeZ1oElZG3QOsYbAwtFxkdCAnT2sfU/edit?usp=sharing" target="_blank">Homework 6: Project Logos</a></li>
         <li><a href="https://14143-dh-sustainability.github.io/maps/" target="_blank">Homework 8: Maps</a></li>
-      </ul>
-
-      <h2>Final Projects</h2>
-      <ul id="projects">
       </ul>
 
       <h2>3D Sphinx</h2>
@@ -134,6 +134,7 @@
       })
       .then(data => {
         const list = document.getElementById("projects");
+        list.textContent = '';
 
         data.forEach(item => {
           if (item.Directory !== 'final') return; // Skip all items from other homeworks
